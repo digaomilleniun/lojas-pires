@@ -4,7 +4,6 @@ MAINTAINER Rodrigo Pires <digaomilleniun@gmail.com>
 
 # Set ENV variables
 ENV PORT=8888
-ENV DISCOVERY_URL="http://localhost:8888"
 
 # Add JAR file and run it as entrypoint
 ADD target/configserver-local-0.0.1-SNAPSHOT.jar app.jar

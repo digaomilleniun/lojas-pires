@@ -4,7 +4,6 @@ MAINTAINER Rodrigo Pires <digaomilleniun@gmail.com>
 
 # Set ENV variables
 ENV PORT=9091
-ENV DISCOVERY_URL="http://localhost:9091"
 
 # Add JAR file and run it as entrypoint
 ADD target/lojas-pires-eureka-server-0.0.1-SNAPSHOT.jar app.jar
