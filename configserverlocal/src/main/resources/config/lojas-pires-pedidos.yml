@@ -1,0 +1,47 @@
+server:
+  port: 9093
+  wait-time-in-ms-when-sync-empty: 3000
+eureka:
+  instance:
+    hostname: localhost
+    port: 9091
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+ 
+spring:
+  data:
+      mongodb:
+        uri: mongodb://127.0.1.1:27017/orders
+        database: orders
+#spring:
+#    datasource:
+#        driver-class-name: org.postgresql.Driver        
+#        platform: postgres
+#        url: jdbc:postgresql://localhost:5432/testes?verifyServerCertificate=false&useSSL=false&requireSSL=false
+#        username: postgres
+#        password: 'admin'
+#    jpa:
+#        database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+#        generate-ddl: true
+        #generate-ddl: false
+#        hibernate:        
+#            ddl-auto: create-drop
+            #ddl-auto: none
+#        show-sql: true
+#        properties:
+#            hibernate:               
+#                jdbc:
+#                    lob:
+#                        non_contextual_creation: true
+
+#authserver:
+#    hostname: http://localhost:9092
+#security:
+#    oauth2:
+#        client:            
+#            scope: password
+#        resource:
+#            userInfoUri: ${authserver.hostname}/user

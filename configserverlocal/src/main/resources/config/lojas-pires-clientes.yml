@@ -1,0 +1,19 @@
+server:
+  port: 9094
+  wait-time-in-ms-when-sync-empty: 3000
+eureka:
+  instance:
+    hostname: localhost
+    port: 9091
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+
+spring:
+  data:
+      mongodb:
+        uri: mongodb://127.0.1.1:27017/customer
+        database: customer
+        
