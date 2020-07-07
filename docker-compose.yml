@@ -4,7 +4,7 @@ services:
   # CONFIG SERVER SERVICE
   configserver:
     build:
-      context: ./configserver-local
+      context: ./configserverlocal
       dockerfile: Dockerfile
     ports:
       - 8888:8888
