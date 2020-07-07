@@ -1,5 +1,10 @@
 #!/bin/bash
 
+echo Installing openjdk-8 and Maven
+apt-get update
+apt-get install openjdk-8-jdk
+apt-get install maven
+
 echo ConfigServer Service: BUILDING
 cd configserverlocal
 mvn clean install -U
