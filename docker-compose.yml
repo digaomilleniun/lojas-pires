@@ -16,7 +16,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - 9091:9091
-      depends_on:
+    depends_on:
       - configserver
 
   # API GATEWAY
