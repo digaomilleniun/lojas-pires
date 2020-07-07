@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo ConfigServer Service: BUILDING
-cd configserver-local
+cd configserverlocal
 mvn clean install -U
 cd ..
 clear
