@@ -3,4 +3,4 @@ spring:
     name: lojas-pires-eureka-server
   cloud:
     config:
-      uri: http://localhost:8888
+      uri: ${CONFIGSERVER_URL:http://localhost:8888}

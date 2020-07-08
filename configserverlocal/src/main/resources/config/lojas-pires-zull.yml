@@ -3,7 +3,7 @@ server:
   wait-time-in-ms-when-sync-empty: 3000
 eureka:
   instance:
-    hostname: localhost
+    hostname: ${DISCOVERY_URL:localhost}
     port: 9091
   client:
     registerWithEureka: true
