@@ -1,9 +1,14 @@
 #!/bin/bash
 
-echo Installing openjdk-8 and Maven
-apt-get update
-apt-get install openjdk-8-jdk
-apt-get install maven
+echo "Deseja instalar o Open JDK 8 e o Maven? S/N"
+read resp
+if [ $resp = "S" ]
+then
+    echo Installing openjdk-8 and Maven
+	apt-get update
+	apt-get install openjdk-8-jdk
+	apt-get install maven    
+fi
 
 echo ConfigServer Service: BUILDING
 cd configserverlocal
